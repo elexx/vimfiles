@@ -44,35 +44,7 @@ autocmd filetype html,xml set listchars-=tab:>.
 
 set mouse=a
 
-" http://stackoverflow.com/questions/6624043/how-to-open-or-close-nerdtree-and-tagbar-with-leader
-function! ToggleNERDTree()
-    let w:jumpbacktohere = 1
-
-    " Detect which plugins are open
-    if exists('t:NERDTreeBufName')
-        let nerdtree_open = bufwinnr(t:NERDTreeBufName) != -1
-    else
-        let nerdtree_open = 0
-    endif
-
-    " Perform the appropriate action
-    if nerdtree_open
-        NERDTreeClose
-    else
-        NERDTree
-    endif
-
-    " Jump back to the original window
-    for window in range(1, winnr('$'))
-        execute window . 'wincmd w'
-        if exists('w:jumpbacktohere')
-            unlet w:jumpbacktohere
-            break
-        endif
-    endfor
-endfunction
-
-nmap <F12> :call ToggleNERDTree()<CR>
+nmap <F12> :NERDTreeToggle<CR>
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
