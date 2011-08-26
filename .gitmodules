@@ -10,3 +10,6 @@
     path = bundle/conque
     url = https://github.com/rson/vim-conque.git
     ignore = dirty
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
