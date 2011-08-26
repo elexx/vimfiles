@@ -44,7 +44,8 @@ autocmd filetype html,xml set listchars-=tab:>.
 
 set mouse=a
 
-nmap <F12> :NERDTreeToggle<CR>
+nmap <F5> :NERDTreeToggle<CR>
+nmap <F6> :TlistToggle<CR>
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
