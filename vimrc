@@ -1,9 +1,11 @@
+" Removes vi compatibility
 set nocompatible
 
 " Load Pathogen
 call pathogen#infect()
 call pathogen#helptags()
 
+" Load Wombat theme
 if has("gui_running")
     colorscheme wombat
 else
@@ -12,41 +14,55 @@ else
     colorscheme wombat256
 endif
 
+" Set font
 set gfn=Inconsolata\ Medium\ 10
 
-set nowrap
-set shiftwidth=4
-set shiftround
-set showmatch
-set ignorecase
-set hlsearch
-set incsearch
+" Visual stuff
 set number
-set smarttab
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set undolevels=1000
 set title
-set visualbell
-set noerrorbells
-set nobackup
-"set noswapfile
-
-set pastetoggle=<F2>
-
-filetype indent plugin on
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
 
+" Indentation
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set shiftround
+set shiftwidth=4
+set smarttab
+set expandtab
+set smartindent
+set pastetoggle=<F2>
+
+filetype indent plugin on
+
+" Searching
+set showmatch
+set smartcase
+set hlsearch
+set incsearch
+
+" Alerts
+set noerrorbells
+set visualbell
+
+" Backups and history
+set nobackup
+set undolevels=1000
+set noswapfile
+
+" Mouse
 set mouse=a
 
+" NERDTree
 nmap <F5> :NERDTreeToggle<CR>
+
+" Taglist
 nmap <F6> :TlistToggle<CR>
 
+" Code completion
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
