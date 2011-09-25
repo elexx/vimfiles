@@ -74,3 +74,6 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 " Highlighting for various file types
 au BufRead,BufNewFile *.twig set filetype=jinja
 au BufRead,BufNewFile *.twig set filetype=htmljinja
+
+" Command aliases
+com Nt NERDTree
