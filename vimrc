@@ -76,4 +76,4 @@ au BufRead,BufNewFile *.twig set filetype=jinja
 au BufRead,BufNewFile *.twig set filetype=htmljinja
 
 " Command aliases
-com Nt NERDTree
+cnoreabbrev nt NERDTree
