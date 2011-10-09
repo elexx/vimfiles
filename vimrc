@@ -58,6 +58,7 @@ set mouse=a
 
 " NERDTree
 nmap <F5> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " Taglist
 nmap <F6> :TlistToggle<CR>
