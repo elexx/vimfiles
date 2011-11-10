@@ -58,6 +58,7 @@ set mouse=a
 
 " NERDTree
 nmap <F5> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 let NERDTreeShowHidden=1
 
 " Taglist
