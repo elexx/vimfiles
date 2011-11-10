@@ -14,3 +14,6 @@
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
 	ignore = dirty
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = git://github.com/vim-scripts/Gist.vim.git
