@@ -91,3 +91,17 @@ au BufRead,BufNewFile *.html set filetype=htmljinja
 
 " Command aliases
 cnoreabbrev nt NERDTree
+
+" Fix for syntax highlighting to appear correctly
+autocmd BufEnter * :syntax sync fromstart
+autocmd BufEnter * :syntax sync minlines=99999
+
+" Disabled arrows
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
