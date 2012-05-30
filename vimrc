@@ -15,7 +15,11 @@ else
 endif
 
 " Set font
-set gfn=Inconsolata\ Medium\ 10
+if has("mac")
+    set gfn=Inconsolata:h13
+else
+    set gfn=Inconsolata\ Medium\ 10
+endif
 
 " Visual stuff
 set number
