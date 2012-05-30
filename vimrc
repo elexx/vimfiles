@@ -60,6 +60,10 @@ set noswapfile
 " Mouse
 set mouse=a
 
+" Tabs
+nmap <F7> :tabn<CR>
+nmap <F8> :tabp<CR>
+
 " NERDTree
 nmap <F5> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
