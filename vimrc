@@ -61,8 +61,8 @@ set noswapfile
 set mouse=a
 
 " Tabs
-nmap <F7> :tabn<CR>
-nmap <F8> :tabp<CR>
+nmap <F7> :tabp<CR>
+nmap <F8> :tabn<CR>
 
 " NERDTree
 nmap <F5> :NERDTreeToggle<CR>
