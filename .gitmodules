@@ -23,3 +23,4 @@
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
+	ignore = dirty
