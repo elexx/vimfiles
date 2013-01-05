@@ -20,3 +20,6 @@
 	path = bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
 	ignore = dirty
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = git://github.com/SirVer/ultisnips.git
