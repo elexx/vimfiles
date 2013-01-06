@@ -5,9 +5,6 @@
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = git://github.com/mattn/gist-vim.git
-[submodule "bundle/powerline"]
-	path = bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "bundle/sparkup"]
 	path = bundle/sparkup
 	url = git://github.com/tristen/vim-sparkup.git
@@ -15,3 +12,6 @@
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = git://github.com/Lokaltog/powerline.git

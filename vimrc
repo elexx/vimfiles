@@ -1,6 +1,8 @@
 " Removes vi compatibility
 set nocompatible
 
+set encoding=utf-8
+
 " Load Pathogen
 call pathogen#infect()
 call pathogen#helptags()
@@ -24,6 +26,7 @@ endif
 " Visual stuff
 set number
 set title
+set laststatus=2
 
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
@@ -113,3 +116,5 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+source /home/ondrej/.vim/bundle/powerline/powerline/ext/vim/source_plugin.vim
