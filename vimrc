@@ -118,3 +118,5 @@ imap <left> <nop>
 imap <right> <nop>
 
 source /home/ondrej/.vim/bundle/powerline/powerline/ext/vim/source_plugin.vim
+
+set runtimepath^=~/.vim/bundle/ctrlp
