@@ -117,6 +117,6 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-source ~/.vim/bundle/powerline/powerline/ext/vim/source_plugin.vim
+python from powerline.bindings.vim import source_plugin; source_plugin()
 
 set runtimepath^=~/.vim/bundle/ctrlp
