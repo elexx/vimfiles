@@ -3,9 +3,18 @@ set nocompatible
 
 set encoding=utf-8
 
-" Load Pathogen
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Jinja'
+Bundle 'scrooloose/nerdtree'
+Bundle 'mattn/gist-vim'
+Bundle 'tristen/vim-sparkup'
+Bundle 'SirVer/ultisnips'
+Bundle 'kien/ctrlp.vim'
+
+filetype plugin indent on
 
 " Load Wombat theme
 if has("gui_running")
