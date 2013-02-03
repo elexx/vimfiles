@@ -13,6 +13,8 @@ Bundle 'mattn/gist-vim'
 Bundle 'tristen/vim-sparkup'
 Bundle 'SirVer/ultisnips'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Wombat'
+Bundle 'wombat256.vim'
 
 filetype plugin indent on
 
@@ -22,7 +24,7 @@ if has("gui_running")
 else
     set t_Co=256
     syntax on
-    colorscheme wombat256
+    colorscheme wombat256mod
 endif
 
 " Set font
