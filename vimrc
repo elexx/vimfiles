@@ -14,6 +14,7 @@ Bundle 'tristen/vim-sparkup'
 Bundle 'SirVer/ultisnips'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'Lokaltog/powerline'
 Bundle 'Wombat'
 Bundle 'wombat256.vim'
 
@@ -129,11 +130,5 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-python << endpython
-try:
-    from powerline.bindings.vim import source_plugin; source_plugin()
-except:
-    pass
-endpython
-
+set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim
 set runtimepath^=~/.vim/bundle/ctrlp
