@@ -15,6 +15,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline'
+Bundle 'nvie/vim-flake8'
 Bundle 'Wombat'
 Bundle 'wombat256.vim'
 
