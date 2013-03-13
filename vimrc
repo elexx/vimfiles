@@ -113,7 +113,6 @@ au BufRead,BufNewFile *.twig set filetype=htmljinja
 au BufRead,BufNewFile *.html set filetype=jinja
 au BufRead,BufNewFile *.html set filetype=htmljinja
 
-
 " Command aliases
 cnoreabbrev nt NERDTree
 
@@ -130,6 +129,9 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" CtrlP
+let g:ctrlp_show_hidden = 1
 
 set runtimepath+=~/.vim/bundle/powerline/powerline/bindings/vim
 set runtimepath^=~/.vim/bundle/ctrlp
