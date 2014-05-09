@@ -16,6 +16,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline'
 Bundle 'nvie/vim-flake8'
+Bundle 'editorconfig/editorconfig-vim'
 Bundle 'Wombat'
 Bundle 'wombat256.vim'
 
