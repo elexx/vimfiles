@@ -1,6 +1,5 @@
-" Removes vi compatibility
 set nocompatible
-
+set filetype=off
 set encoding=utf-8
 
 set rtp+=~/.vim/bundle/vundle/
@@ -9,33 +8,35 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Jinja'
 Bundle 'scrooloose/nerdtree'
-Bundle 'mattn/gist-vim'
 Bundle 'tristen/vim-sparkup'
-Bundle 'SirVer/ultisnips'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/powerline'
 Bundle 'nvie/vim-flake8'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'taglist.vim'
 Bundle 'Wombat'
 Bundle 'wombat256.vim'
+Bundle 'AutoComplPop'
+
+Bundle 'stephpy/vim-php-cs-fixer'
 
 filetype plugin indent on
 
 " Load Wombat theme
 if has("gui_running")
-    colorscheme wombat
+	colorscheme wombat
 else
-    set t_Co=256
-    syntax on
-    colorscheme wombat256mod
+	set t_Co=256
+	syntax on
+	colorscheme wombat256mod
 endif
 
 " Set font
 if has("mac")
-    set gfn=Inconsolata:h13
+	set gfn=Inconsolata:h13
 else
-    set gfn=Inconsolata\ Medium\ 10
+	set gfn=Inconsolata\ Medium\ 10
 endif
 
 " Visual stuff
@@ -44,8 +45,7 @@ set title
 set laststatus=2
 
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
-autocmd filetype html,xml set listchars-=tab:>.
+set listchars=nbsp:¤,tab:\ \ ,trail:.,extends:>,precedes:<
 
 " Indentation
 set nowrap
@@ -54,7 +54,7 @@ set shiftwidth=4
 set shiftround
 set shiftwidth=4
 set smarttab
-set expandtab
+set noexpandtab
 set smartindent
 set pastetoggle=<F2>
 
@@ -74,6 +74,7 @@ set visualbell
 set nobackup
 set undolevels=1000
 set noswapfile
+set nowb
 
 " Mouse
 set mouse=a
